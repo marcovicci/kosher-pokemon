@@ -1,0 +1,1 @@
+cmd /k "cd /d Z:\Github\kosher-pokemon && env\Scripts\activate.bat && set FLASK_APP=run.py && set FLASK_DEBUG=1 && py -m flask run"

@@ -21,7 +21,9 @@
     Is it kosher by body type? {{ mon[0][12] }}</b>
     <br>
     {% if mon[0][13] != None %}
-        <div class="more-info"><b>Any more info?</b> {{ mon[0][13] }}</div>
+        <div class="more-info">{{ mon[0][13] }}</div>
+    {% else %}
+    <br>
     {% endif %}
 </div>
 {% endblock %}

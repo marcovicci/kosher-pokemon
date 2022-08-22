@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="Which Pokemon are Jewish trainers allowed to eat?" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <style>
+
+        body {
+        background-color: #191919;
+        color: #dfdfdf;
+        font-size: 20px;
+        }
+
+        #all-pokemon {
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          display: grid;
+          grid-template-columns: repeat(15, auto);
+        }
+
+        .inline-img {
+          display: inline;
+        }
+
+        .single-mon {
+          text-align: center;
+        }
+
+        .detailed {
+          background-color: #dfdfdf;
+          color: #191919;
+          border: 2px solid #191919;
+          border-radius: 10px;
+          padding: 10px;
+          max-width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+    </style>
+
+    {% endblock %}
+
+  </head>
+
+  <body>
+
+    {% block header %}
+    <div id="header">
+    </div>
+    {% endblock %}
+
+    {% block content %} blah blah {% endblock %}
+
+    {% block footer %}
+    <div id="footer">
+      {{ disclaimer|upper }}
+    </div>
+    {% endblock %}
+
+  </body>
+
+</html>

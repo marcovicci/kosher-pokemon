@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Is {{ mon[0][2] }} kosher?{% endblock %}
+
+{% block content %}
+<div class="single-mon detailed">
+<h1>{{ mon[0][2] }}</h1>
+  <img src="{{ mon[0][1] }}">
+  <br><b>Type:</b> {{ mon[0][5] }} {{ mon[0][6] }}
+    <br><b>Alt types, if any:</b> {{ mon[0][7] }} {{ mon[0][8] }}
+  <br><b>Egg Group:</b> {{ mon[0][3] }} {{ mon[0][4] }}
+  <br><b>Body type:</b> <img class="inline-img" src="{{ mon[0][9] }}">
+  <br><b>Is it kosher by types? {{ mon[0][10] }}<br>
+    Is it kosher by egg groups? {{ mon[0][11] }}<br>
+    Is it kosher by body type? {{ mon[0][12] }}</b>
+    <br>
+    <div class="more-info"><b>Any more info?</b> {{ mon[0][13] }}</div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Kosher Pokemon?{% endblock %}
+
+{% block content %}
+
+<div id="all-pokemon">
+
+{% for mon in pokemon %}
+<div class="single-mon">
+<a href="/mon/{{ mon[0] }}">
+  <img src="{{ mon[1] }}">
+</a>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

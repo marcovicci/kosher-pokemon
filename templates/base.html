@@ -30,8 +30,27 @@
           display: inline;
         }
 
+        #all-pokemon .single-mon {
+          height: 60px; /* Can be anything */
+          width: 60px; /* Can be anything */
+          position: relative;
+        }
+
         .single-mon {
           text-align: center;
+        }
+
+        #all-pokemon .single-mon img {
+          max-height: 100%;
+          max-width: 100%;
+          width: auto;
+          height: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
         }
 
         .detailed {
@@ -50,6 +69,22 @@
           padding: 10px;
           margin-left: auto;
           margin-right: auto;
+        }
+
+        .footer-nav {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          padding: 10px;
+          max-width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          font-weight: bold;
+        }
+
+        .footer-nav a, footer-nav a:visited {
+          color: #dfdfdf;
+          text-decoration: none;
         }
 
     </style>

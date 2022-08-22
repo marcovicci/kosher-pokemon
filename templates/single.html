@@ -26,4 +26,30 @@
     <br>
     {% endif %}
 </div>
+
+<div class="footer-nav">
+
+<div class="last">
+  {% if mon[0][0] != 1 %}
+  <a href="/mon/{{ mon[0][0] - 1 }}">&larr; LAST MON</a>
+  {% else %}
+  <a href="/mon/905">&larr; LAST MON</a>
+  {% endif %}
+</div>
+
+<div class="back">
+
+<a href="/">HOME</a>
+
+</div>
+
+<div class="next">
+  {% if mon[0][0] != 905 %}
+  <a href="/mon/{{ mon[0][0] + 1 }}">NEXT MON &rarr;</a>
+  {% else %}
+  <a href="/mon/1">NEXT MON &rarr;</a>
+  {% endif %}
+</div>
+
+</div>
 {% endblock %}
